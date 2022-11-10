@@ -1,0 +1,34 @@
+item {
+  id: 1
+  name: 'chu_yu_1'
+}
+
+item {
+  id: 2
+  name: 'chu_yu_2'
+}
+
+item {
+  id: 3
+  name: 'ke_hui_shou_1'
+}
+
+item {
+  id: 4
+  name: 'ke_hui_shou_2'
+}
+
+item {
+  id: 5
+  name: 'qi_ta_1'
+}
+
+item {
+  id: 6
+  name: 'qi_ta_2'
+}
+
+item {
+  id: 7
+  name: 'you_hai'
+}
