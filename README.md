@@ -1,13 +1,13 @@
 # Tensorflow-Object-Detection-Project
 # Garbage classification (recyclable, other and kitchen waste)
 
- The repository includes:
- The whole projects form Google TensorFlow Object Detection
- Source code of Garbage classification built on TensorFlow Detection Project.
- Training code for ssd_mobilenet_v1
- Pre-trained weights for faster_rcnn_inception_v2 and ssd_mobilenet_v1
- the detection code are in the detect.py (One by one photo identification) and test.py (real time detection).
- Example of training on your own dataset
+The repository includes:  
+* The whole projects form Google TensorFlow Object Detection  
+* Source code of Garbage classification built on TensorFlow Detection Project.  
+* Training code for ssd_mobilenet_v1  
+* Pre-trained weights for faster_rcnn_inception_v2 and ssd_mobilenet_v1  
+* the detection code are in the detect.py (One by one photo identification) and test.py (real time detection).  
+* Example of training on your own dataset
 
 # Get Start
 1. This portfolio test runs on Windows 10Pro for Workstations (19045.2193), IDE is Pycharm, and a dataset uses ssd_mobilenet_v1_coco and faster_rcnn_inception_v2 for training. Finally select faster_rcnn_inception_v2 as the recognition model
@@ -37,29 +37,62 @@ I’m providing pre-trained weights for ssd_mobilenet_v1 to make it easier to st
 
 Because github restricts the uploading single file to no more than 100mb, the events.out.tfevents of some training models and the model documents of ssd_mobilenet_v1_coco_11_06_2017 used for migration learning. It needs to be uploaded to Baidu network disk.  
 
-Link: https://pan.baidu.com/s/1RuxKbtsS8ZLSRX3i97OdeA?pwd=rst1  
+Links: https://pan.baidu.com/s/1RuxKbtsS8ZLSRX3i97OdeA?pwd=rst1  
 
 Download and unzip it and overwrite it with Tensorflow-Object-Detection-Project downloaded from github.  
 
 # Train your own dataset (take this project as an example)
 ## Prepare training data and test data
-1.D:\python3\models-master\research\object_detection Create a new folder named images  
+1.D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection Create a new folder named images  
 
 Then create two folders under the mages file, one named train and the other named test. The file structure is as follows(Due to Github limitations, this repository ignores uploading the dataset of this project)  
 <div align=center>
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/1.png">
 </div>  
 
- There are 9 pictures of kitchen waste, 15 pictures of recyclable waste, and 11 pictures of other waste in the test.  
- There are 34 pictures of kitchen waste, 76 pictures of recyclable waste, and 31 pictures of other waste in the train.
+ * There are 9 pictures of kitchen waste, 15 pictures of recyclable waste, and 11 pictures of other waste in the test.  
+ * There are 34 pictures of kitchen waste, 76 pictures of recyclable waste, and 31 pictures of other waste in the train.
 
 The image naming format is number_flip/number, and the image type is jpg format, as shown in the figure  
 <div align=center>
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/2.png">
-</div>
-2. Label each picture and generate an xml file containing the picture label and location information. This project uses a software LabelImg, which is convenient and quick to label.(link:https://github.com/tzutalin/labelImg/files/2638199/windows_v1.8.1.zip)  
+</div>  
+2. Label each picture and generate an xml file containing the picture label and location information. This project uses a software LabelImg, which is convenient and quick to label.(links:https://github.com/tzutalin/labelImg/files/2638199/windows_v1.8.1.zip)  
+ 
+* (1) Click on the link and download the latest version, then unzip it, as shown in the figure  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/3.png">
+</div>  
 
-Click on the link and download the latest version, then unzip it, as shown in the figure
+* (2) After opening labelimg, the first step is to click Open Dir, then find D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection\images\train and click to select the folder
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/4.png">
+</div>  
+
+* (3)Press the W key of the keyboard to start marking, as shown in the figure, select the marked object (soda can), and a dialog box will pop up, enter the label, and what I type here is ke_hui_shou (Chinese Pinyin, meaning recyclable), If it is kitchen waste, enter chu_yu, the effect is as shown in the figure
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/5.png">
+</div>  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/6.png">
+</div>  
+
+* (4) The final effect is shown in the figure
+</div>  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/7.png">
+</div>  
+
+* (5) Then collect all the xml into a csv file, you need to use Python code to achieve, in the Tensorflow-Object-Detection-Project directory, run "transfer from xml to csv.py"  
+PS:The path needs to be modified before running transfer from xml to csv.py. Change D:\\spec in the path on lines 13 and 14 to the directory where Tensorflow Object Detection Project places the test computer.  
+* (6) Run the above code to generate the csv file as shown below
+</div>  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/8.png">
+</div>
+
+
+
 
 
 
