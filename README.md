@@ -8,15 +8,16 @@
 </div>
 3. Open detect.py in Tensorflow-Object-Detection-Project\models-master\research\object_detection  
 
-5. Change D:\\spec in "PATH_TO_CKPT" on line 16 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the model location)  
+4. Change D:\\spec in "PATH_TO_CKPT" on line 16 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the model location)  
 
-7. Change D:\\spec in "PATH_TO_LABELS" on line 17 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the label location)  
+5. Change D:\\spec in "PATH_TO_LABELS" on line 17 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the label location)  
 
-9. Change D:\\spec in detection on line 93 to the directory where Tensorflow Object Detection Project places the test computer (select the location of the test image set) 
+6. Change D:\\spec in detection on line 93 to the directory where Tensorflow Object Detection Project places the test computer (select the location of the test image set) 
  
-11. The last step is to use Pycharm to execute detect.py to output the result  
+7. The last step is to use Pycharm to execute detect.py to output the result  
 
-13. Real-time recognition as test.py in Tensorflow-Object-Detection-Project\models-master\research\object_detection, open pycharm to execute  
+8. Real-time recognition as test.py in Tensorflow-Object-Detection-Project\models-master\research\object_detection, open pycharm to execute
+9. Due to the limited computer performance, the training time is not long, and the processor is used for training, so the accuracy is not high. The accuracy is about 70%.   
 
 # Issues
 1. Q: If ModuleNotFoundError: No module named 'object_detection' occurs  
