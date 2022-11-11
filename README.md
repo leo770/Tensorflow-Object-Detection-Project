@@ -1,6 +1,20 @@
 # Tensorflow-Object-Detection-Project
 # Garbage classification (recyclable, other, kitchen waste, hazardous waste)
 
+The repository includes:  
+
+The whole projects form Google TensorFlow Object Detection  
+
+Source code of Garbage classification built on TensorFlow Detection Project.  
+
+Training code for ssd_mobilenet_v1  
+
+Pre-trained weights for faster_rcnn_inception_v2 and ssd_mobilenet_v1  
+
+the detection code are in the detect.py (One by one photo identification) and test.py (real time detection).  
+
+Example of training on your own dataset  
+
 1. This portfolio test runs on Windows 10Pro for Workstations (19045.2193), IDE is Pycharm, and a dataset uses ssd_mobilenet_v1_coco and faster_rcnn_inception_v2 for training. Finally select faster_rcnn_inception_v2 as the recognition model
 2. Python environment collocation (using Python 3.6.5, TensorFlow 1.14.0 CPU Version)
 <div align=center>
@@ -41,3 +55,5 @@ Because github restricts the uploading single file to no more than 100mb, the ev
 Link: https://pan.baidu.com/s/1qBXpHb-EGXb5F7oNsQDprA?pwd=x4fl  
 
 Download and unzip it and overwrite it with Tensorflow-Object-Detection-Project downloaded from github.
+
+# 
