@@ -121,6 +121,31 @@ The following picture appears, the conversion is successful
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/11.png">
 </div>  
 
+3. Profiles and Models  
+This project selects ssd_mobilenet_v1_coco.config, copy ssd_mobilenet_v1_coco.config in the object_detection\ssd_mobilenet_v1_coco_11_06_2017 file, and create a new folder named training ssd in the \object_detection directory, and put ssd_mobilenet_v1_coco.config in the training ssd folder ,As shown below
+</div>  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/12.png">
+</div>  
+
+* (1) Use pycharm to open ssd_mobilenet_v1_coco.config for modification  
+* (2) Modify "input_path:" on line 175, and change the path to "D:\\spec\\Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection\\data\\train.record". Where "D:\\spec" should be changed to the project where the project is located.  
+* (3) Modify "input_path:" on line 177, and change the path to "D:\\spec\\Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection\\data\\trash.pbtxt". Where "D:\\spec" should be changed to the project where the project is located.  
+* This input_path is the path of the test data, change it to the corresponding path  
+
+* (4) Modify "input_path:" on line 189, and change the path to "D:\\spec\\Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection\\data\\test.record". Where "D:\\spec" should be changed to the project where the project is located.  
+* (5) Modify "input_path:" on line 191, and change the path to "D:\\spec\\Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection\\data\\trash.pbtxt". Where "D:\\spec" should be changed to the project where the project is located
+* This input_path is the path of the training data, change to the corresponding path  
+* (6) Modify "num_classes: " in line 9, this project is divided into 6 categories, so it is 6  
+* The trash.pbtxt file at (3) and (5) modified above needs to be created by yourself, you can copy a file and then change the file name, as shown in the figure
+    * The trash.pbtxt file at (3) and (5) modified above needs to be created by yourself, and then write as many categories as there are in this format.
+    </div>  
+    <div align=center>
+    <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/13.png">
+    </div>  
+* The configuration is now complete, start training  
+
+
 
 
 
