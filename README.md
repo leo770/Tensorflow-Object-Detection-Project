@@ -13,8 +13,9 @@ Pre-trained weights for faster_rcnn_inception_v2 and ssd_mobilenet_v1
 
 the detection code are in the detect.py (One by one photo identification) and test.py (real time detection).  
 
-Example of training on your own dataset  
+Example of training on your own dataset
 
+# Get Start
 1. This portfolio test runs on Windows 10Pro for Workstations (19045.2193), IDE is Pycharm, and a dataset uses ssd_mobilenet_v1_coco and faster_rcnn_inception_v2 for training. Finally select faster_rcnn_inception_v2 as the recognition model
 2. Python environment collocation (using Python 3.6.5, TensorFlow 1.14.0 CPU Version)
 <div align=center>
@@ -36,6 +37,10 @@ Example of training on your own dataset
 8. Real-time recognition as test.py in Tensorflow-Object-Detection-Project\models-master\research\object_detection, open pycharm to execute
 9. Due to the limited computer performance, the training time is not long, and the processor is used for training, so the accuracy is not high. The accuracy is about 70%.(Intel Core I5-5200U With 8GBRAM Single Channel 1600MHz DDR3)  
 
+# Training on ssd_mobilenet_v1
+I’m providing pre-trained weights for ssd_mobilenet_v1 to make it easier to start, but you need to download the complete model file in the provided Baidu network disk link. You can use those weights as a starting point to train your own variation on the network. Training code is in Tensorflow-Object-Detection-Project\models-master\research\object_detection\train.py. You can run it directly from Windows cmd as such:
+`python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training ssd/ssd_mobilenet_v1_coco.config`
+
 # Issues
 1. Q: If ModuleNotFoundError: No module named 'object_detection' occurs  
 
@@ -55,5 +60,3 @@ Because github restricts the uploading single file to no more than 100mb, the ev
 Link: https://pan.baidu.com/s/1qBXpHb-EGXb5F7oNsQDprA?pwd=x4fl  
 
 Download and unzip it and overwrite it with Tensorflow-Object-Detection-Project downloaded from github.
-
-# 
