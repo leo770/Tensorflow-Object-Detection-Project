@@ -145,6 +145,11 @@ This project selects ssd_mobilenet_v1_coco.config, copy ssd_mobilenet_v1_coco.co
     </div>  
 * The configuration is now complete, start training  
 
+4. Train the model
+Just execute `python train.py --logtostderr --train_dir=training ssd/ --pipeline_config_path=training ssd/ssd_mobilenet_v1_coco.config`in cmd openning in Tensorflow-Object-Detection-Project\models-master\research\object_detection
+
+
+
 
 
 
