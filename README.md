@@ -45,7 +45,20 @@ Because github restricts the uploading single file to no more than 100mb, the ev
 
 Link: https://pan.baidu.com/s/1RuxKbtsS8ZLSRX3i97OdeA?pwd=rst1  
 
-Download and unzip it and overwrite it with Tensorflow-Object-Detection-Project downloaded from github.
+Download and unzip it and overwrite it with Tensorflow-Object-Detection-Project downloaded from github.  
+
+# Train your own dataset (take this project as an example)
+## Prepare training data and test data
+1. D:\python3\models-master\research\object_detection Create a new folder named images  
+
+Then create two folders under the mages file, one named train and the other named test. The file structure is as follows(Due to Github limitations, this repository ignores uploading the dataset of this project)  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/1.png">
+</div>
+
+
+
+
 
 
 # Issues
