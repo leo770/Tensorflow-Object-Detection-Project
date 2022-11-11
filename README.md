@@ -55,6 +55,16 @@ Then create two folders under the mages file, one named train and the other name
 <div align=center>
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/1.png">
 </div>
+`There are 9 pictures of kitchen waste, 15 pictures of recyclable waste, and 11 pictures of other waste in the test.  
+ There are 34 pictures of kitchen waste, 76 pictures of recyclable waste, and 31 pictures of other waste in the train.`
+
+The image naming format is number_flip/number, and the image type is jpg format, as shown in the figure  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/2.png">
+</div>
+2. Label each picture and generate an xml file containing the picture label and location information. This project uses a software LabelImg, which is convenient and quick to label.(link:https://github.com/tzutalin/labelImg/files/2638199/windows_v1.8.1.zip)  
+
+Click on the link and download the latest version, then unzip it, as shown in the figure
 
 
 
