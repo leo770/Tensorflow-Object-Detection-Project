@@ -23,8 +23,12 @@
 1. Q: If ModuleNotFoundError: No module named 'object_detection' occurs  
 
 A: Copy the "setup.py" in the "models\research\object_detection\packages\tf2" folder to the "models\research" directory, and then execute:  
+python setup.py build  
+
+python setup.py install  
 
 2. Q: If No module named 'tf_slim' appears  
 
-A: Execute in the /research/slim folder
+A: Execute in the /research/slim folder  
+
 python setup.py install
