@@ -91,6 +91,39 @@ PS:The path needs to be modified before running "transfer from xml to csv.py". C
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/8.png">
 </div>
 
+* (7) Similarly, the pictures in the test are also marked and converted according to steps (2)-(6). Attention:
+    * The path of step (2) needs to be changed to "Project directory\Tensorflow-Object-Detection-Project\models-master\research\object_detection\images\test"
+    * The path of step (5) needs to change the path of "D:\spec" to the location directory of the computer where the Tensorflow Object Detection Project is located, and change the trash_train.csv on line 40 to trash_test.csv
+
+* (8) Because the input data format of the Tensorflow object detection API is in TFRcords Format, we need to convert the csv file into a record file, first copy and paste the trash_train.csv and trash_test.csv generated above to D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection\data and D:/spec is changed to the directory where TensorFlow Object Detection is located, as shown in the figure
+</div>  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/9.png">
+</div>  
+
+* (9) Then you need to use Python code to convert csv to record. The code is as follows, copy and paste the following code into a file named generate_TFR.py under D:\python3\models-master\research\object_detection  
+* (10) Then you need to use Python code to convert csv to record. The code is in the file named "generate_tfr.py" under TensorFlow-Object-Detection\models-master\research\object_detection  
+Conversion steps：  
+    * Two changes are required
+        * In line 12, you need to change D:\\spec in the path "D:\\spec\\Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection" to the computer to store Tensorflow-Object-Detection -Project location
+        * Lines 22 to 35 need to be changed to the categories marked in labelImg as shown in the figure. Write as many categories as there are. Here, this project is divided into 5 categories
+        * In line 87, if train.record is generated, it should be changed to "Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection\\images\\train: (training set image path)  
+Then execute `python generate_TFR.py --csv_input=data/trash_train.csv --output_path=data/train.record`
+        * In line 87, if test.record is generated, it should be changed to "Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection\\images\\test: (training set image path)  
+Then execute `python generate_TFR.py --csv_input=data/trash_test.csv --output_path=data/test.record`  
+The following picture appears, the conversion is successful
+</div>  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/10.png">
+</div> 
+</div>  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/11.png">
+</div>  
+
+
+
+
 
 
 
