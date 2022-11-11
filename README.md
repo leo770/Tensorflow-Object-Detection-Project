@@ -84,7 +84,7 @@ The image naming format is number_flip/number, and the image type is jpg format,
 </div>  
 
 * (5) Then collect all the xml into a csv file, you need to use Python code to achieve, in the Tensorflow-Object-Detection-Project directory, run "transfer from xml to csv.py"  
-PS:The path needs to be modified before running transfer from xml to csv.py. Change D:\\spec in the path on lines 13 and 14 to the directory where Tensorflow Object Detection Project places the test computer.  
+PS:The path needs to be modified before running "transfer from xml to csv.py". Change D:\\spec in the path on lines 13 and 14 to the directory where Tensorflow Object Detection Project places the test computer.  
 * (6) Run the above code to generate the csv file as shown below
 </div>  
 <div align=center>
