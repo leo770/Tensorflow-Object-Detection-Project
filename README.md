@@ -3,7 +3,9 @@
 
 1. This portfolio test runs on Windows 10Pro for Workstations (19045.2193), IDE is Pycharm, and a dataset uses ssd_mobilenet_v1_coco and faster_rcnn_inception_v2 for training. Finally select faster_rcnn_inception_v2 as the recognition model
 2. Python environment collocation (using Python 3.6.5, TensorFlow 1.14.0 CPU Version)
-![Image text](https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/image.png)
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/image.png">
+</div>
 3. Open detect.py in Tensorflow-Object-Detection-Project\models-master\research\object_detection
 4. Change D:\\spec in "PATH_TO_CKPT" on line 16 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the model location)
 5. Change D:\\spec in "PATH_TO_LABELS" on line 17 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the label location)
