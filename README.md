@@ -55,8 +55,7 @@ Then create two folders under the mages file, one named train and the other name
 <div align=center>
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/1.png">
 </div>
-`There are 9 pictures of kitchen waste, 15 pictures of recyclable waste, and 11 pictures of other waste in the test.`
-`There are 34 pictures of kitchen waste, 76 pictures of recyclable waste, and 31 pictures of other waste in the train.`
+`There are 9 pictures of kitchen waste, 15 pictures of recyclable waste, and 11 pictures of other waste in the test.`  `There are 34 pictures of kitchen waste, 76 pictures of recyclable waste, and 31 pictures of other waste in the train.`
 
 The image naming format is number_flip/number, and the image type is jpg format, as shown in the figure  
 <div align=center>
