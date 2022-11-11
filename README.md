@@ -28,13 +28,13 @@
 A: Copy the "setup.py" in the "models\research\object_detection\packages\tf2" folder to the "models\research" directory, and then execute:  
 python setup.py build  
 
-`<python setup.py install>`
+`python setup.py install`
 
 2. Q: If No module named 'tf_slim' appears  
 
 A: Execute in the /research/slim folder  
 
-`<python setup.py install>`  
+`python setup.py install`  
 
 Because github restricts the uploading single file to no more than 100mb, the events.out.tfevents of some training models and the model documents of ssd_mobilenet_v1_coco_11_06_2017 used for migration learning. It needs to be uploaded to Baidu network disk.  
 
