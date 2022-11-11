@@ -31,4 +31,10 @@ python setup.py install
 
 A: Execute in the /research/slim folder  
 
-python setup.py install
+python setup.py install  
+
+Because github restricts the uploading single file to no more than 100mb, the events.out.tfevents of some training models and the model documents of ssd_mobilenet_v1_coco_11_06_2017 used for migration learning. It needs to be uploaded to Baidu network disk.  
+
+Link: https://pan.baidu.com/s/1qBXpHb-EGXb5F7oNsQDprA?pwd=x4fl  
+
+Download and unzip it and overwrite it with Tensorflow-Object-Detection-Project downloaded from github.
