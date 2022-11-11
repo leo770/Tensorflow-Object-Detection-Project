@@ -39,7 +39,14 @@ Example of training on your own dataset
 
 # Training on ssd_mobilenet_v1
 I’m providing pre-trained weights for ssd_mobilenet_v1 to make it easier to start, but you need to download the complete model file in the provided Baidu network disk link. You can use those weights as a starting point to train your own variation on the network. Training code is in Tensorflow-Object-Detection-Project\models-master\research\object_detection\train.py. You can run it directly from Windows cmd as such:
-`python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training ssd/ssd_mobilenet_v1_coco.config`
+`python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training ssd/ssd_mobilenet_v1_coco.config`  
+
+Because github restricts the uploading single file to no more than 100mb, the events.out.tfevents of some training models and the model documents of ssd_mobilenet_v1_coco_11_06_2017 used for migration learning. It needs to be uploaded to Baidu network disk.  
+
+Link: https://pan.baidu.com/s/1RuxKbtsS8ZLSRX3i97OdeA?pwd=rst1  
+
+Download and unzip it and overwrite it with Tensorflow-Object-Detection-Project downloaded from github.
+
 
 # Issues
 1. Q: If ModuleNotFoundError: No module named 'object_detection' occurs  
@@ -55,8 +62,4 @@ A: Execute in the /research/slim folder
 
 `python setup.py install`  
 
-Because github restricts the uploading single file to no more than 100mb, the events.out.tfevents of some training models and the model documents of ssd_mobilenet_v1_coco_11_06_2017 used for migration learning. It needs to be uploaded to Baidu network disk.  
 
-Link: https://pan.baidu.com/s/1qBXpHb-EGXb5F7oNsQDprA?pwd=x4fl  
-
-Download and unzip it and overwrite it with Tensorflow-Object-Detection-Project downloaded from github.
