@@ -9,7 +9,7 @@ The repository includes:
 * Pre-trained weights for faster_rcnn_inception_v2 and ssd_mobilenet_v1  
 * the detection code are in the detect.py (One by one photo identification) and test.py (real time detection).  
 * Example of training on your own dataset
-* In training folder, it is faster_rcnn_inception_v2, and the Baidu network disk link is ssd_mobilenet_v1
+* In the "training" folder is the checkpoint file of faster_rcnn_inception_v2, and the checkpoint file of ssd_mobilenet_v1 is stored in Baidu network disk.
 * The demo of "Get Start" is based on the model trained by faster_rcnn_inception_v2
 
 # Get Start
