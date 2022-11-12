@@ -170,20 +170,22 @@ Execute `tensorboard --logdir=training ssd` and the following figure appears
     </div>   
 
 5. Test the trained model  
+* When the number of training steps is enough, you can try to close the cmd window that runs the training model, and use the export_inference_graph.py that comes with the Object Detection API to export the model to check the detection effect. Before running it, you need to pass in config and other related information. parameters, and create a test folder in the "object_detection\" directory (take the garbage classification of this project as an example)
+Open cmd in the "models-master\research\object_detection" directory and execute this command(xxxx is the trained checkpoint）    
+`python export_inference_graph.py \ --input_type image_tensor \ --pipeline_config_path training ssd/ssd_mobilenet_v1_coco.config \ --trained_checkpoint_prefix training ssd/model.ckpt-xxxx \ --output_directory testing`  
+    * Attention:
+        * "--output_directory" is the folder name of the output model, "trained_checkpoint_prefix" is the prefix we want to convert the model checkpoint to, and "pipeline_config_path" is the location of the training configuration file "ssd_mobilenet_v1_coco.config".  
+ * After running the above command, the "testing" folder will be generated under the object_detection folder, as shown in the figure below.
+</div>  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/17.png">
+</div>   
+
+6. Finally, our model has been constructed.
+
 
     
     
-
-
-
-
-
-
-
-
-
-
-
 
 
 
