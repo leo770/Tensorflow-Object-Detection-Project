@@ -17,11 +17,11 @@ The repository includes:
 </div>
 3. Open detect.py in Tensorflow-Object-Detection-Project\models-master\research\object_detection  
 
-4. Change D:\\spec in "PATH_TO_CKPT" on line 16 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the model location)  
+4. Change "D:\\spec" in "PATH_TO_CKPT" on line 16 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the model location)  
 
-5. Change D:\\spec in "PATH_TO_LABELS" on line 17 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the label location)  
+5. Change "D:\\spec" in "PATH_TO_LABELS" on line 17 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the label location)  
 
-6. Change D:\\spec in detection on line 93 to the directory where Tensorflow Object Detection Project places the test computer (select the location of the test image set) 
+6. Change "D:\\spec" in detection on line 93 to the directory where Tensorflow Object Detection Project places the test computer (select the location of the test image set) 
  
 7. The last step is to use Pycharm to execute detect.py to output the result  
 <div align=center>
@@ -43,7 +43,7 @@ Download and unzip it and overwrite it with Tensorflow-Object-Detection-Project 
 
 # Train your own dataset (take this project as an example)
 ## Prepare training data and test data
-1.D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection Create a new folder named images  
+1."D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection" Create a new folder named images  
 
 Then create two folders under the mages file, one named train and the other named test. The file structure is as follows(Due to Github limitations, this repository ignores uploading the dataset of this project)  
 <div align=center>
@@ -64,7 +64,7 @@ The image naming format is number_flip/number, and the image type is jpg format,
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/3.png">
 </div>  
 
-* (2) After opening labelimg, the first step is to click Open Dir, then find D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection\images\train and click to select the folder
+* (2) After opening labelimg, the first step is to click Open Dir, then find "D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection\images\train" and click to select the folder
 <div align=center>
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/4.png">
 </div>  
@@ -83,8 +83,8 @@ The image naming format is number_flip/number, and the image type is jpg format,
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/7.png">
 </div>  
 
-* (5) Then collect all the xml into a csv file, you need to use Python code to achieve, in the Tensorflow-Object-Detection-Project directory, run "transfer from xml to csv.py"  
-PS:The path needs to be modified before running "transfer from xml to csv.py". Change D:\\spec in the path on lines 13 and 14 to the directory where Tensorflow Object Detection Project places the test computer.  
+* (5) Then collect all the xml into a csv file, you need to use Python code to achieve, in the "Tensorflow-Object-Detection-Project" directory, run "transfer from xml to csv.py"  
+PS:The path needs to be modified before running "transfer from xml to csv.py". Change "D:\\spe"c in the path on lines 13 and 14 to the directory where Tensorflow Object Detection Project places the test computer.  
 * (6) Run the above code to generate the csv file as shown below
 </div>  
 <div align=center>
@@ -182,6 +182,9 @@ Open cmd in the "models-master\research\object_detection" directory and execute 
 </div>   
 
 6. Finally, our model has been constructed.
+
+# Test your own model
+* As with the model trained by Get Start calling this project, change the path in step 4 of "Get Start" to the path location of the model "testing" just exported, and step 5 of "Get Start" to "Train your own dataset" The "pbtxt" document path created in step 6 in "Profiles and Models" in ", the test image you are looking for is stored in step 6 of "Get Start", and then run "detect.py" in pycharm to see the recognition effect.
 
 
     
