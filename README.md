@@ -148,11 +148,28 @@ This project selects ssd_mobilenet_v1_coco.config, copy ssd_mobilenet_v1_coco.co
 4. Train the model
 Just execute `python train.py --logtostderr --train_dir=training ssd/ --pipeline_config_path=training ssd/ssd_mobilenet_v1_coco.config`in cmd openning in Tensorflow-Object-Detection-Project\models-master\research\object_detection
 * Attention:  
-    * If you download the training ssd provided by the Baidu network disk file for coverage in this project, you need to delete the pre-training file of this project before training, and then put the ssd_mobilenet_v1_coco.config file configured in (1)-(6) into the training ssd and then execute the training instructions in this step
+    * If you download the training ssd provided by the Baidu network disk file for coverage in this project, you need to delete the pre-training file of this project before training, and then put the ssd_mobilenet_v1_coco.config file configured in (1)-(6) into the training ssd and then execute the training instructions in this step  
+* When you see the content shown in the figure below, it proves that the training is in progress:
+</div>  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/14.png">
+</div>  
+
+* You can see the optimization situation through the visual page
+    * Open the cmd window in the models-master\research\object_detection directory  
+Execute `tensorboard --logdir=training ssd` and the following figure appears  
     </div>  
     <div align=center>
-    <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/14.png">
+    <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/15.png">
     </div>  
+    
+    * Copy the address of the white box in the above picture to a web browser to open it, and the interface shown in the figure below will appear.  
+    </div>  
+    <div align=center>
+    <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/16.png">
+    </div>   
+    
+    
 
 
 
