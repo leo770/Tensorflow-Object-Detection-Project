@@ -168,6 +168,9 @@ Execute `tensorboard --logdir=training ssd` and the following figure appears
     <div align=center>
     <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/16.png">
     </div>   
+
+5. Test the trained model  
+
     
     
 
