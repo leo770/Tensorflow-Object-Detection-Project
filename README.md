@@ -184,7 +184,9 @@ Open cmd in the "models-master\research\object_detection" directory and execute 
 6. Finally, our model has been constructed.
 
 # Test your own model
-* As with the model trained by Get Start calling this project, change the path in step 4 of "Get Start" to the path location of the model "testing" just exported, and step 5 of "Get Start" to "Train your own dataset" The "pbtxt" document path created in step 6 in "Profiles and Models" in ", the test image you are looking for is stored in step 6 of "Get Start", and then run "detect.py" in pycharm to see the recognition effect.
+* As with the model trained by the previous Get Start call in this project, change the path in step 4 of "Get Start" to the path location of the model "testing" just exported.
+* "Get Start" step 5 is changed to the "pbtxt" document path created in step 6 in "Profiles and Models" in "Train your own dataset".
+* Store the test image you are looking for in step 6 of "Get Start", and then run "detect.py" in pycharm to see the recognition effect
 
 
     
