@@ -146,7 +146,7 @@ This project selects ssd_mobilenet_v1_coco.config, copy ssd_mobilenet_v1_coco.co
 * The configuration is now complete, start training  
 
 4. Train the model
-Just execute `python train.py --logtostderr --train_dir=training ssd/ --pipeline_config_path=training ssd/ssd_mobilenet_v1_coco.config`in cmd openning in Tensorflow-Object-Detection-Project\models-master\research\object_detection
+Just execute `python train.py --logtostderr --train_dir=training ssd/ --pipeline_config_path=training ssd/ssd_mobilenet_v1_coco.config`in cmd openning in "Tensorflow-Object-Detection-Project\models-master\research\object_detection"
 * Attention:  
     * If you download the training ssd provided by the Baidu network disk file for coverage in this project, you need to delete the pre-training file of this project before training, and then put the ssd_mobilenet_v1_coco.config file configured in (1)-(6) into the training ssd and then execute the training instructions in this step  
 * When you see the content shown in the figure below, it proves that the training is in progress:
