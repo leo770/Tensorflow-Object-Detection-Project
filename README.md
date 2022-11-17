@@ -1,6 +1,7 @@
 # Tensorflow-Object-Detection-Project
 * This project is modified from the Google TensorFlow Object Detection open source project 
 # Garbage classification (recyclable, other and kitchen waste)
+* Posted by author Wenhao Li
  
 The repository includes:  
 * The whole projects form Google TensorFlow Object Detection  
