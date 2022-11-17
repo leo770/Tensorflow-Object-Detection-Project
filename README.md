@@ -1,8 +1,7 @@
 # Tensorflow-Object-Detection-Project
 * This project is modified from the Google TensorFlow Object Detection open source project 
 # Garbage classification (recyclable, other and kitchen waste)
-* Posted by author Wenhao Li
- 
+* The repository was published by Wenhao Li
 The repository includes:  
 * The whole projects form Google TensorFlow Object Detection  
 * Source code of Garbage classification built on TensorFlow Detection Project.  
@@ -19,24 +18,24 @@ The repository includes:
 <div align=center>
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/image.png">
 </div>
-3. Open detect.py in Tensorflow-Object-Detection-Project\models-master\research\object_detection  
+3. Open detect.py in "Tensorflow-Object-Detection-Project\models-master\research\object_detection"  
 
-4. Change "D:\\spec" in "PATH_TO_CKPT" on line 16 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the model location)  
+4. Change "D:\\spec" in "PATH_TO_CKPT" on line 16 to the directory where the test computer is placed for the "Tensorflow Object Detection Project" (select the model location)  
 
-5. Change "D:\\spec" in "PATH_TO_LABELS" on line 17 to the directory where the test computer is placed for the Tensorflow Object Detection Project (select the label location)  
+5. Change "D:\\spec" in "PATH_TO_LABELS" on line 17 to the directory where the test computer is placed for the "Tensorflow Object Detection Project" (select the label location)  
 
-6. Change "D:\\spec" in detection on line 93 to the directory where Tensorflow Object Detection Project places the test computer (select the location of the test image set) 
+6. Change "D:\\spec" in detection on line 93 to the directory where "Tensorflow Object Detection Project" places the test computer (select the location of the test image set) 
  
 7. The last step is to use Pycharm to execute detect.py to output the result  
 <div align=center>
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/image.png">
 </div>
 
-8. Real-time recognition as test.py in Tensorflow-Object-Detection-Project\models-master\research\object_detection, open pycharm to execute
+8. Real-time recognition as test.py in "Tensorflow-Object-Detection-Project\models-master\research\object_detection", open pycharm to execute
 9. Due to the limited computer performance, the training time is not long, and the processor is used for training, so the accuracy is not high. The accuracy is about 70%.(Intel Core I5-5200U With 8GBRAM Single Channel 1600MHz DDR3)  
 
 # Training on ssd_mobilenet_v1
-I’m providing pre-trained weights for ssd_mobilenet_v1 to make it easier to start, but you need to download the complete model file in the provided Baidu network disk link. You can use those weights as a starting point to train your own variation on the network. Training code is in Tensorflow-Object-Detection-Project\models-master\research\object_detection\train.py. You can run it directly from Windows cmd as such:
+I’m providing pre-trained weights for ssd_mobilenet_v1 to make it easier to start, but you need to download the complete model file in the provided Baidu network disk link. You can use those weights as a starting point to train your own variation on the network. Training code is in "Tensorflow-Object-Detection-Project\models-master\research\object_detection\train.py". You can run it directly from Windows cmd as such:
 `python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training ssd/ssd_mobilenet_v1_coco.config`  
 
 Because github restricts the uploading single file to no more than 100mb, the events.out.tfevents of some training models and the model documents of ssd_mobilenet_v1_coco_11_06_2017 used for migration learning. It needs to be uploaded to Baidu network disk.  
@@ -68,7 +67,7 @@ The image naming format is number_flip/number, and the image type is jpg format,
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/3.png">
 </div>  
 
-* (2) After opening labelimg, the first step is to click Open Dir, then find "D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection\images\train" and click to select the folder
+* (2) After opening labelimg, the first step is to click Open Dir, then find "D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection\images\train" and click to select the folder"
 <div align=center>
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/4.png">
 </div>  
@@ -88,7 +87,7 @@ The image naming format is number_flip/number, and the image type is jpg format,
 </div>  
 
 * (5) Then collect all the xml into a csv file, you need to use Python code to achieve, in the "Tensorflow-Object-Detection-Project" directory, run "transfer from xml to csv.py"  
-PS:The path needs to be modified before running "transfer from xml to csv.py". Change "D:\\spe"c in the path on lines 13 and 14 to the directory where Tensorflow Object Detection Project places the test computer.  
+PS:The path needs to be modified before running "transfer from xml to csv.py". Change "D:\\spec" in the path on lines 13 and 14 to the directory where Tensorflow Object Detection Project places the test computer.  
 * (6) Run the above code to generate the csv file as shown below
 </div>  
 <div align=center>
@@ -99,21 +98,21 @@ PS:The path needs to be modified before running "transfer from xml to csv.py". C
     * The path of step (2) needs to be changed to "Project directory\Tensorflow-Object-Detection-Project\models-master\research\object_detection\images\test"
     * The path of step (5) needs to change the path of "D:\spec" to the location directory of the computer where the Tensorflow Object Detection Project is located, and change the trash_train.csv on line 40 to trash_test.csv
 
-* (8) Because the input data format of the Tensorflow object detection API is in TFRcords Format, we need to convert the csv file into a record file, first copy and paste the trash_train.csv and trash_test.csv generated above to D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection\data and D:/spec is changed to the directory where TensorFlow Object Detection is located, as shown in the figure
+* (8) Because the input data format of the Tensorflow object detection API is in TFRcords Format, we need to convert the csv file into a record file, first copy and paste the trash_train.csv and trash_test.csv generated above to "D:\spec\Tensorflow-Object-Detection-Project\models-master\research\object_detection\data" and "D:/spec" is changed to the directory where TensorFlow Object Detection is located, as shown in the figure
 </div>  
 <div align=center>
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/9.png">
 </div>  
 
-* (9) Then you need to use Python code to convert csv to record. The code is as follows, copy and paste the following code into a file named generate_TFR.py under D:\python3\models-master\research\object_detection  
-* (10) Then you need to use Python code to convert csv to record. The code is in the file named "generate_tfr.py" under TensorFlow-Object-Detection\models-master\research\object_detection  
+* (9) Then you need to use Python code to convert csv to record. The code is as follows, copy and paste the following code into a file named generate_TFR.py under "D:\python3\models-master\research\object_detection"  
+* (10) Then you need to use Python code to convert csv to record. The code is in the file named "generate_tfr.py" under "TensorFlow-Object-Detection\models-master\research\object_detection"  
 Conversion steps：  
     * Two changes are required
-        * In line 12, you need to change D:\\spec in the path "D:\\spec\\Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection" to the computer to store Tensorflow-Object-Detection -Project location
+        * In line 12, you need to change "D:\\spec" in the path "D:\\spec\\Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection" to the computer to store Tensorflow-Object-Detection-Project location
         * Lines 22 to 35 need to be changed to the categories marked in labelImg as shown in the figure. Write as many categories as there are. Here, this project is divided into 5 categories
-        * In line 87, if train.record is generated, it should be changed to "Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection\\images\\train: (training set image path)  
+        * In line 87, if train.record is generated, it should be changed to "Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection\\images\\train": (training set image path)  
 Then execute `python generate_TFR.py --csv_input=data/trash_train.csv --output_path=data/train.record`
-        * In line 87, if test.record is generated, it should be changed to "Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection\\images\\test: (training set image path)  
+        * In line 87, if test.record is generated, it should be changed to "Tensorflow-Object-Detection-Project\\models-master\\research\\object_detection\\images\\test": (training set image path)  
 Then execute `python generate_TFR.py --csv_input=data/trash_test.csv --output_path=data/test.record`  
 The following picture appears, the conversion is successful
 </div>  
@@ -126,7 +125,7 @@ The following picture appears, the conversion is successful
 </div>  
 
 3. Profiles and Models  
-This project selects ssd_mobilenet_v1_coco.config, copy ssd_mobilenet_v1_coco.config in the object_detection\ssd_mobilenet_v1_coco_11_06_2017 file, and create a new folder named training ssd in the \object_detection directory, and put ssd_mobilenet_v1_coco.config in the training ssd folder ,As shown below
+This project selects ssd_mobilenet_v1_coco.config, copy ssd_mobilenet_v1_coco.config in the "object_detection\ssd_mobilenet_v1_coco_11_06_2017" file, and create a new folder named training ssd in the "\object_detection directory", and put ssd_mobilenet_v1_coco.config in the training ssd folder ,As shown below
 </div>  
 <div align=center>
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/12.png">
@@ -160,7 +159,7 @@ Just execute `python train.py --logtostderr --train_dir=training ssd/ --pipeline
 </div>  
 
 * You can see the optimization situation through the visual page
-    * Open the cmd window in the models-master\research\object_detection directory  
+    * Open the cmd window in the "models-master\research\object_detection" directory  
 Execute `tensorboard --logdir=training ssd` and the following figure appears  
     </div>  
     <div align=center>
