@@ -41,7 +41,7 @@ I’m providing pre-trained weights for ssd_mobilenet_v1 to make it easier to st
 
 Because github restricts the uploading single file to no more than 100mb, the events.out.tfevents of some training models and the model documents of ssd_mobilenet_v1_coco_11_06_2017 used for migration learning. It needs to be uploaded to Baidu network disk.  
 
-Links: https://pan.baidu.com/s/1RuxKbtsS8ZLSRX3i97OdeA?pwd=rst1  
+Links: https://pan.baidu.com/s/1bW6lOtJP4wqhNmrVu1YEiA?pwd=yxxc
 
 Download and unzip it and overwrite it with Tensorflow-Object-Detection-Project downloaded from github.  
 
