@@ -32,7 +32,11 @@ The repository includes:
 <img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/image.png">
 </div>
 
-8. Real-time recognition as test.py in "Tensorflow-Object-Detection-Project\models-master\research\object_detection", open pycharm to execute
+8. Real-time recognition as test.py in "Tensorflow-Object-Detection-Project\models-master\research\object_detection", open pycharm to execute  
+<div align=center>
+<img src="https://github.com/leo770/Tensorflow-Object-Detection-Project/blob/main/img-folder/18.png">
+</div>  
+
 9. Due to the limited computer performance, the training time is not long, and the processor is used for training, so the accuracy is not high. The accuracy is about 70%.(Intel Core I5-5200U With 8GBRAM Single Channel 1600MHz DDR3)  
 
 # Training on ssd_mobilenet_v1
